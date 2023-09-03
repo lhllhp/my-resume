@@ -6,7 +6,7 @@ export default {
     downloadPDF() {
       const element = this.$refs.pdfContent;
       const options = {
-        filename: 'page_content.pdf',
+        filename: 'LeHuuLoc-WebDeveloper.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
@@ -34,7 +34,7 @@ export default {
 
           <div class="yui-u">
             <div class="contact-info">
-              <h3 @click="downloadPDF">Download PDF</h3>
+              <h3 @click="downloadPDF"><a id="pdf" href="#">Download PDF</a></h3>
 <!--              <button @click="printDownload">Print Download</button>-->
               <h3><a href="mailto:lhllhp9x@gmail.com">lhllhp9x@gmail.com</a></h3>
               <h3>(+84) 978 842 027</h3>
